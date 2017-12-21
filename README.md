@@ -30,6 +30,21 @@ audio 和 video 这两个组件的实现没有采用.vue文件，而是分为js�
     </mpi-audio>
 ```
 
+需要传的参数包含：
+```javascript
+    {
+        "type": "audio",
+        "mainType": "audio",
+        "title": "音频",
+        "contents": {
+          "audioSrc": "http://kolber.github.io/audiojs/demos/mp3/juicy.mp3",
+          "audioPoster": "http://www.17sucai.com/preview/1/2017-03-02/%E8%BD%AE%E6%92%AD/img/77.jpg",
+          "audioTitle": "来自派的音乐",
+          "audioAuthor": "Troy.Bi",
+          "audioDuration": "237"
+        }
+    }
+```
 
 
 2. video插件
@@ -47,7 +62,6 @@ video插件包含单个视频和多个视频轮播等多种样式。
         "type": "video1",
         "mainType": "video",
         "title": "视频",
-        "mid": 1513827297286,
         "contents": {
           "video": "http://baidu-pai.cdn.bcebos.com/baidu-pai/baidu-pai/video/1110443008_1510729990.mp4", // 视频链接
           "img": "http://www.17sucai.com/preview/1/2017-03-02/%E8%BD%AE%E6%92%AD/img/77.jpg", // 视频封面
@@ -69,7 +83,6 @@ video插件包含单个视频和多个视频轮播等多种样式。
         "type": "video2",
         "mainType": "video",
         "title": "视频",
-        "mid": 1513251624012,
         "contents": {
           "wapheight": 160,
           "pcheight": 300,
@@ -94,10 +107,15 @@ video插件包含单个视频和多个视频轮播等多种样式。
 ```
 
 space类型：
+
 ![](http://iknow-base.bj.bcebos.com/pai%2F00-video.png)
+
 card类型：
+
 ![](http://iknow-base.bj.bcebos.com/pai%2F01-video.png)
+
 normal类型：
+
 ![](http://iknow-base.bj.bcebos.com/pai%2F02-video.png)
 
 # 目录
