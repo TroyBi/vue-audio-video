@@ -1,0 +1,8 @@
+{
+    "errno": 0,
+    "errmsg": "success!",
+    "data":
+    {
+        "rid": 100
+    }
+}

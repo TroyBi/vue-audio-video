@@ -1,0 +1,179 @@
+.mpi-carousel__arrow, .mpi-carousel__button {
+  margin: 0;
+  transition: .3s;
+  cursor: pointer;
+  outline: 0
+}
+
+.mpi-carousel {
+  overflow-x: hidden;
+  position: relative
+}
+
+.mpi-carousel__container {
+  position: relative;
+  height: 300px
+}
+
+.mpi-carousel__arrow {
+  border: none;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(31, 45, 61, .11);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 12px
+}
+
+.mpi-carousel__arrow:hover {
+  background-color: rgba(31, 45, 61, .23)
+}
+
+.mpi-carousel__arrow i {
+  cursor: pointer
+}
+
+.mpi-carousel__arrow--left {
+  left: 16px
+}
+
+.mpi-carousel__arrow--right {
+  right: 16px
+}
+
+.mpi-carousel__indicators {
+  position: absolute;
+  list-style: none;
+  bottom: 0;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 2
+}
+
+.mpi-carousel__indicators--outside {
+  bottom: 26px;
+  text-align: center;
+  position: static;
+  -ms-transform: none;
+  transform: none
+}
+
+.mpi-carousel__indicators--outside .mpi-carousel__indicator:hover button {
+  opacity: .64
+}
+
+.mpi-carousel__indicators--outside button {
+  background-color: #8391a5;
+  opacity: .24
+}
+
+.mpi-carousel__indicators--labels {
+  left: 0;
+  right: 0;
+  -ms-transform: none;
+  transform: none;
+  text-align: center
+}
+
+.mpi-carousel__indicators--labels .mpi-carousel__button {
+  width: auto;
+  height: auto;
+  padding: 2px 18px;
+  font-size: 12px
+}
+
+.mpi-carousel__indicators--labels .mpi-carousel__indicator {
+  padding: 6px 4px
+}
+
+.mpi-carousel__indicator {
+  display: inline-block;
+  background-color: transparent;
+  padding: 12px 4px;
+  cursor: pointer
+}
+
+.mpi-carousel__indicator:hover button {
+  opacity: .72
+}
+
+.mpi-carousel__indicator.is-active button {
+  opacity: 1
+}
+
+.mpi-carousel__button {
+  display: block;
+  opacity: .48;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.carousel-arrow-left-enter, .carousel-arrow-left-leave-active {
+  -ms-transform: translateY(-50%) translateX(-10px);
+  transform: translateY(-50%) translateX(-10px);
+  opacity: 0
+}
+
+.carousel-arrow-right-enter, .carousel-arrow-right-leave-active {
+  -ms-transform: translateY(-50%) translateX(10px);
+  transform: translateY(-50%) translateX(10px);
+  opacity: 0
+}
+
+
+.mpi-carousel__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  transition: .4s ease-in-out;
+  overflow: hidden;
+  z-index: 0
+}
+
+.mpi-carousel__item.is-active {
+  z-index: 2
+}
+
+.mpi-carousel__item--card {
+  width: 50%
+}
+.mpi-carousel__item--space {
+  width: 80%
+}
+
+.mpi-carousel__item--card.is-in-stage {
+  cursor: pointer;
+  z-index: 1
+}
+.mpi-carousel__item--space.is-in-stage {
+  cursor: pointer;
+  z-index: 1
+}
+
+.mpi-carousel__item--card.is-active {
+  z-index: 2
+}
+.mpi-carousel__item--space.is-active {
+  z-index: 2
+}
+
+.mpi-carousel__item--card.is-in-stage.is-hover .mpi-carousel__mask, .mpi-carousel__item--card.is-in-stage:hover .mpi-carousel__mask {
+  opacity: .12
+}
